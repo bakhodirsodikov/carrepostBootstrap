@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Carrepost</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary flex-column">
+          <div class="container-xl d-flex flex-lg-column flex-row ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between w-100" id="navbarSupportedContent">
+              <div class="col">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-navbar-nav align-items-center text-center row">
+                  <li class="nav-item dropdown col col-lg-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Москва
+                    </a>
+                    <ul class="dropdown-menu text-center">
+                      <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                      <li><a class="dropdown-item" href="#">Казань</a></li>
+                      <li><a class="dropdown-item" href="#">Самара</a></li>
+                    </ul>
+                  </li>
+                  <div class="col-lg-1"></div>
+                  <li class="nav-item dropdown col col-lg-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      +7 (499) 450-75-85
+                    </a>
+                    <ul class="dropdown-menu text-center">
+                      <li><a class="dropdown-item" href="#">+7 (499) 450-75-75</a></li>
+                      <li><a class="dropdown-item" href="#">+7 (499) 450-75-75</a></li>
+                      <li><a class="dropdown-item" href="#">+7 (499) 450-75-75</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item col col-lg-2">
+                    <a class="nav-link active" aria-current="page" href="#">Заказать звонок</a>
+                  </li>
+                  <li class="nav-item col col-lg-2">
+                    <div class=" row text-center align-items-center">
+                      <div class="col col-lg-2 px-lg-0 px-2 text-end">
+                        <img src="./images/icons/lock.png" class="header-navbar-icon">
+                      </div>
+                      <div class="col ps-0 text-center ">
+                        <a class="nav-link  text-start" href="#">Войти</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item col col-lg-2">
+                    <div class=" row text-center align-items-center">
+                      <div class="col col-lg-2 px-lg-0 px-2 text-end">
+                        <img src="./images/icons/basket.png" class="header-navbar-icon">
+                      </div>
+                      <div class="col ps-0 text-center ">
+                        <a class="nav-link  text-start" href="#">Корзина</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col col-lg-3">
+                <form class="d-flex justify-content-end" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex w-100 align-items-center text-center">
+              <div class="col-3 d-flex">
+                <img src="./images/icons/logo.png" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <ul class="nav d-flex justify-content-between text-dark header-menu-nav">
+                    <a class="" aria-current="page" href="#">КУПИТЬ CAREPROST</a>
+                    <a class="" href="#">продукция</a>
+                    <a class="" href="#">ОТЗЫВЫ</a>
+                    <a class="" href="#">ВОПРОСЫ</a>
+                    <a class="" href="#">КОНТАКТЫ</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- <header class="container-xl">
+        <div class="row justify-content-between">
+          <div class="d-lg-none col-2">
+            <button
+              class="navbar-toggler p-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebar"
+              aria-controls="sidebar"
+              aria-label="Toggle docs navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                class="bi"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                ></path>
+              </svg>
+
+              <span class="d-none fs-6 pe-1">Browse</span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="sidebar"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Carrepost
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>
+                  Try scrolling the rest of the page to see this option in
+                  action.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-none d-lg-block col-lg-2">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Москва
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                <li><a class="dropdown-item" href="#">Казань</a></li>
+                <li><a class="dropdown-item" href="#">Самара</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-none d-lg-flex col-lg-9 offset-lg-1 row text-center align-items-center p-0"
+          >
+            <div class="row">
+              <div class="col">
+                <div class="row align-items-center h-100">
+                  <div class="col-2 p-1">
+                    <img
+                      src="./images/icons/tel.png"
+                      alt="tel"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-10 pe-4 ps-0">
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle p-1"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        +7 (499) 450-75-85
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu">
+                        <li>
+                          <a class="dropdown-item active" href="#"
+                            >+7 (499) 450-75-75</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >+7 (499) 451-75-85</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >+7 (499) 450-76-85</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row align-items-center h-100">
+                  <a
+                    href="#"
+                    class="text-nowrap link-info link-underline link-underline-opacity-0"
+                    >Заказать звонок</a
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <div class="row align-items-center">
+                  <div class="col-3 p-1">
+                    <img
+                      src="./images/icons/lock.png"
+                      alt="lock"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-9 p-1 text-start">
+                    <a
+                      href="#"
+                      class="text-nowrap link-dark link-underline link-underline-opacity-0"
+                      >Войти</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row align-items-center">
+                  <div class="col-3 p-1">
+                    <img
+                      src="./images/icons/basket.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-9 p-1 px-3">
+                    <a
+                      href="#"
+                      class="text-nowrap link-dark link-underline link-underline-opacity-0"
+                      >Корзина</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row align-items-center h-100">
+                  <div class="col-2 p-1">
+                    <img
+                      src="./images/icons/search.png"
+                      alt="tel"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-10 px-0">
+                    <input
+                      type="text"
+                      class="form-control header__search-input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-between align-items-center d-none d-lg-flex"
+        >
+          <div class="col-2">
+            <img src="./images/icons/logo.png" alt="logo" class="img-fluid" />
+          </div>
+          <div class="col-9">
+            <div class="row justify-content-between text-center">
+              <div class="col">
+                <a
+                  href="#"
+                  class="header__nav-text text-nowrap link-underline link-underline-opacity-0"
+                  >КУПИТЬ CAREPROST</a
+                >
+              </div>
+              <div class="col">
+                <a
+                  href="#"
+                  class="header__nav-text text-nowrap link-underline link-underline-opacity-0"
+                  >Продукция</a
+                >
+              </div>
+              <div class="col">
+                <a
+                  href="#"
+                  class="header__nav-text text-nowrap link-underline link-underline-opacity-0"
+                  >ОТЗЫВЫ</a
+                >
+              </div>
+              <div class="col">
+                <a
+                  href="#"
+                  class="header__nav-text text-nowrap link-underline link-underline-opacity-0"
+                  >ВОПРОСЫ</a
+                >
+              </div>
+              <div class="col">
+                <a
+                  href="#"
+                  class="header__nav-text text-nowrap link-underline link-underline-opacity-0"
+                  >КОНТАКТЫ</a
+                >
+              </div>
+              <div class="col">
+                <a
+                  href="#"
+                  class="header__nav-text text-nowrap link-underline link-underline-opacity-0"
+                  >ДОКУМЕНТЫ</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </header> -->
+      <main>
+        <div class="sectors sector-1 position-relative ">
+          <div class="container-xl">
+            <div class="sector__content-container row align-items-center justify-content-center">
+              <div class="row ">
+                <div class="col-lg-6 ">
+                  <p class="fs-1">Официальный сайт Careprost в России</p>
+                </div>
+                <div class="d-none d-lg-block w-100"></div>
+                <div class="col-lg-6"><p class="fs-6 text-primary">Мы работаем более 10 лет и являемся единственным официальным представителем бренда</p></div>
+                <div class="d-none d-lg-block w-100"></div>
+                <div class="col-lg-6"><p class="fs-6 ">На нашем сайте можно ознакомиться с подробной информацией о продукции, документацией, отзывами и оформить заказ </p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-xl ">
+          <div class="row align-items-center mt-3">
+            <div class="col-lg-6 text-center">
+              <img src="./images/content1.png" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ">
+              <div class="row row-cols-1">
+                <div class="col">
+                  <p class="fs-2 mb-4">Сыворотка для роста ресниц Careprost</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"><p class="text-primary">Эффективность и безопасность в одном флаконе.</p> <br> 
+
+                    Пептидный комплекс Capixyl 3% меняет сигнал фолликулов и увеличивает их размер, чтобы ресницы росли более крепкими и длинными. <br> <br> 
+                    
+                    Подавляет активность 5-альфа-редуктазы 1 и 2 типа, из-за которой ослабевают, истончаются и выпадают ресницы. Неовитин ухаживает за нежной кожей век, защищая от раздражений.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center mt-3">
+            <div class="col-lg-6 ">
+              <div class="row row-cols-1">
+                <div class="col">
+                  <p class="fs-2 mb-4">Сыворотка для роста 
+                    бровей Careprost</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 
+                  Научный подход к выразительному взгляду. Пептидный комплекс Capixyl в увеличенной концентрации – 5%. Фруктовые кислоты киви, апельсина, грейпфрута и яблока нейтрализуют щелочные остатки, а белки миндаля усиливают блеск и приводят к регенерации поврежденных волосков. С Careprost естественные брови всегда будут выглядеть превосходно.
+                  <br> <br> 
+                  <p class="text-primary">Сыворотки Careprost производятся по международным стандартам ISO и GMP, не содержат гормонов и простагландинов, не являются лекарством.
+                  </p>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="./images/content1.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="sectors sector-2 position-relative ">
+          <div class="container-xl">
+            <div class="sector__content-container row align-items-center justify-content-center">
+              <div class="row ">
+                <div class="col-lg-6 offset-lg-6">
+                  <p class="fs-1">Мы используем компоненты с клинически доказанной эффективностью</p>
+                </div>
+                <div class="col-lg-6 offset-lg-6"><p class="fs-6">Действующее вещество сывороток  – Capixyl. Это натуральный комплекс из ацетилтетрапептида-3 и изофлавона красного клевера. С ним ресницы растут длиннее, а выпадают гораздо реже.
+                </p></div>
+                <div class="col-lg-6 offset-lg-6"><a href="#" class="btn text-primary border border-primary rounded-pill">Читать полностью</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-xl ">
+          <div class="row align-items-center mt-3">
+            <div class="col-lg-6 ">
+              <div class="row row-cols-1">
+                <div class="col">
+                  <p class="fs-1 mb-4">Как использовать?</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 
+                    Careprost можно использовать утром или вечером. Для наиболее быстрого результата допускается использование дважды в день.
+                  <br> <br>
+                  Сыворотка наносится после очищения кожи, спустя 30 минут можно нанести уходовые средства и/или макияж. Careprost для бровей можно использовать как гель для укладки за счёт гелевой текстуры.
+                  <br> <br>
+                  <p class="fw-bold">Курс длится 3 месяца.</p>
+                  Без поддержания эффекта ресницы сохранят свою длину на 3-6 месяцев, а брови на 6-9 месяцев. Для достижения более длительного эффекта можно поддерживать результат: Наносите сыворотку 2-3 раза в неделю.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="./images/content1.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="container-xl mt-3">
+          <div class="row">
+            <div class="col-12">
+              <p class="fs-3">Каталог</p>
+            </div>
+            <div class="col col-lg-6">
+              <div class="row row-cols-sm-3 row-cols-1 align-items-center text-center">
+                <div class="col">
+                  <button class="btn catalog__btn">ДЛЯ РЕСНИЦ И БРОВЕЙ</button>
+                </div>
+                <div class="col">
+                  <button class="btn catalog__btn">ДЛЯ ЛИЦА</button>
+                </div>
+                <div class="col">
+                  <button class="btn catalog__btn">ДЛЯ ВОЛОС</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 justify-content-center text-center">
+                <div class="col">
+                  <div class="flex-column align-items-center py-3">
+                    <img src="./images/catalog-1.png" alt="" class="img-fluid">
+                    <p class="my-3">Careprost Eyelash Serum 3ml <br>
+                      для роста ресниц</p>
+                    <p class="text-primary fw-bold">980 руб./шт</p>
+                    <button class="btn text-primary border border-primary rounded-pill">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="flex-column align-items-center py-3">
+                    <img src="./images/catalog-2.png" alt="" class="img-fluid">
+                    <p class="my-3">Careprost Eyebrow Serum 4 ml <br>
+                      для роста бровей</p>
+                    <p class="text-primary fw-bold"> 1050 руб./шт</p>
+                    <button class="btn text-primary border border-primary rounded-pill">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="flex-column align-items-center py-3">
+                    <img src="./images/catalog-3.png" alt="" class="img-fluid">
+                    <p class="my-3">Набор для роста ресниц <br>
+                      и бровей Careprost</p>
+                    <p class="text-primary fw-bold">1 990 руб./шт</p>
+                    <button class="btn text-primary border border-primary rounded-pill">В корзину</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sectors sector-3 position-relative ">
+          <div class="container-xl">
+            <div class="sector__content-container row align-items-center justify-content-center">
+              <div class="row ">
+                <div class="col-lg-6 offset-lg-6">
+                  <p class="fs-1">Производство сывороток Careprost</p>
+                </div>
+                <div class="col-lg-6 offset-lg-6"><p class="fs-6">Главный секрет Careprost — это клинически исследованный состав и производство по международным стандартам 
+                  <p class="text-primary"> ISO 9001:2015 и GMP</p> 
+                </p></div>
+                <div class="col-lg-6 offset-lg-6"><p>Сертификация ISO и GMP — подтверждение, что стандарты производства соблюдаются на каждом этапе: от подготовки до выпуска партии. Контролируются сырье, помещение и оборудование.
+                </p></div>
+                <div class="col-lg-6 offset-lg-6"><a href="#" class="btn text-primary border border-primary rounded-pill">Читать полностью</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-xl">
+          <div class="d-flex flex-column">
+            <p class="fs-1 py-4">Документы</p>
+            <div class="docs row row-cols-1 row-cols-lg-3">
+              <div class="col d-flex flex-column align-items-center text-center pb-3">
+                <img src="./images/docs-1.png" class="rounded-4 img-fluid mb-3" alt="">
+                <p class="fs-6">Декларация о Соответствии</p>
+              </div>
+              <div class="col d-flex flex-column align-items-center text-center pb-3">
+                <img src="./images/docs-2.png" class="rounded-4 img-fluid mb-3" alt="">
+                <p class="fs-6">Паспорт качества сыворотки
+                  для роста ресниц Careprost</p>
+              </div>
+              <div class="col d-flex flex-column align-items-center text-center pb-3">
+                <img src="./images/docs-3.png" class="rounded-4 img-fluid mb-3" alt="">
+                <p class="fs-6">Паспорт качества сыворотки
+                  для роста бровей Careprost</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sectors bg-info d-flex flex-column justify-content-center">
+          <div class="container-xl text-center">
+            <div class="row justify-content-center pt-5 text-light row-cols-1">
+              <div class="col col-lg-8">
+                <p class="fs-2 fw-bold ">Не знаете что выбрать?</p>
+              </div>
+              <div class="col col-lg-8">
+                <p class="fs-5">Заполните форму и наш менеджер, перезвонит и проконсультирует вас. </p>
+              </div>
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="form__container w-100 rounded-pill bg-light d-flex align-items-center justify-content-between p-1">
+                  <input type="number" class="h-100 border-0 fs-6 rounded-pill ps-3 bg-light" placeholder="+7 - - -  - -  - -  - - -">
+                  <button class="btn bg-info rounded-pill px-4 fs-6">Заказать звонок</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container-xl">
+          <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 py-4 text-center text-sm-start border-bottom border-secondary-subtle">
+            <div class="col">
+              <ul class="d-flex flex-column footer-ul">
+                <a href="#" class="py-2 fw-bold">Компания</a>
+                <a href="#" class="py-1">Купить Careprost</a>
+                <a href="#" class="py-1">Отзывы</a>
+                <a href="#" class="py-1">Вопросы</a>
+                <a href="#" class="py-1">Контакты</a>
+                <a href="#" class="py-1">Документы</a>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="d-flex flex-column footer-ul">
+                <a href="#" class="py-2 fw-bold">Доставка и оплата</a>
+                <a href="#" class="py-1">Вопросы и ответы</a>
+                <a href="#" class="py-1">Сотрудничество с блогерами</a>
+                <a href="#" class="py-1">Отследить заказ </a>
+              </ul>
+              <button class="btn bg-info rounded-pill text-light py-2">Остались вопросы?</button>
+            </div>
+
+            <div class="col">
+              <ul class="d-flex flex-column footer-ul">
+                <a href="#" class="py-2 fw-bold">Продукция</a>
+                <a href="#" class="py-1">Для ресниц и бровей</a>
+                <a href="#" class="py-1">Для волос</a>
+                <a href="#" class="py-1">Для лица</a>
+                <a href="#" class="py-1">Наборы</a>
+              </ul>
+            </div>
+
+            <div class="col">
+              <ul class="d-flex flex-column footer-ul">
+                <a href="#" class="py-2 fw-bold">Контакты</a>
+                <a href="tel:+74994507585" class="py-1 text-dark">+7 (499) 450-75-85</a>
+                <div class="d-flex flex-row justify-content-center justify-content-sm-start">
+                  <img src="./images/icons/footer-tg.png" alt="telegram-icon" class="img-fluid">
+                  <img src="./images/icons/footer-whatsapp.png" alt="whatsApp-icon" class="img-fluid ms-2">
+                </div>
+                <a href="mailto:info@careprost-russia.ru" class="py-1 text-dark">info@careprost-russia.ru</a>
+                <a href="#" class="py-1" >Г. Москва, пр. Котузовский 30</a>
+                <div class="d-flex flex-row justify-content-between footer__card-icon">
+                  <img src="./images/icons/footer-mastercard.png" alt="mastercard" >
+                  <img src="./images/icons/footer-maestro.png" alt="maestro">
+                  <img src="./images/icons/footer-visa.png" alt="visa" >
+                  <img src="./images/icons/footer-mir.png" alt="mir" >
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-3 text-center py-2 footer__end">
+            <div class="col-lg-6">
+              <p>2011-2022 Индивидуальный Предприниматель Зимаков Константин Александрович</p>
+            </div>
+            <div class="col-lg-3">
+              <p>ИНН781609810540</p>
+            </div>
+            <div class="col-lg-3">
+              <p>ОГРНИП 314784726700536</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

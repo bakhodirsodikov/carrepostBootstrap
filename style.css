@@ -1,0 +1,140 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.body-container {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container-xl {
+  max-width: 1240px;
+}
+
+.header__basket-num {
+  background-color: gray;
+}
+
+.header__search-input {
+  max-height: 25px;
+}
+
+.header__nav-text {
+  color: #020202;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.7s;
+}
+.header__nav-text:hover {
+  color: aquamarine;
+}
+
+.sectors {
+  width: 100%;
+  max-width: 1920px;
+  height: 634px;
+  background-size: cover;
+  background-position: right 40% top 0;
+}
+
+.sector__content-container {
+  height: 634px;
+  background-repeat: no-repeat;
+}
+
+.sector-1 {
+  background: linear-gradient(90deg, rgb(216, 223, 232) 70%, rgb(201, 232, 238) 70%);
+}
+.sector-1 .sector__content-container {
+  background-image: url("./images/mainBg1-copy.png");
+  background-position: right top;
+}
+
+.sector-2 {
+  background-color: #BFDBDE;
+}
+.sector-2 .sector__content-container {
+  background-image: url("./images/mainBg2-copy.png");
+  background-position: left 50px top;
+}
+
+.catalog__btn {
+  white-space: nowrap;
+  font-size: 12px;
+  transition: 0.7s;
+  text-transform: uppercase;
+}
+.catalog__btn:hover {
+  color: aquamarine;
+}
+
+.sector-3 {
+  background-color: #DEDFE3;
+}
+.sector-3 .sector__content-container {
+  background-image: url("./images/mainBg3-copy.png");
+  background-position: left top;
+}
+
+.form__container {
+  height: 59px;
+}
+.form__container input:focus {
+  outline: none;
+}
+.form__container input::-webkit-outer-spin-button, .form__container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.footer-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-ul a {
+  text-decoration: none;
+}
+
+footer a {
+  color: #020202;
+  transition: 0.7s;
+}
+footer a:hover {
+  color: aquamarine;
+}
+
+.footer__card-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.footer__end {
+  font-size: 10px;
+}
+
+.header-navbar-icon {
+  width: 100%;
+  max-width: 19px;
+  height: 100%;
+  max-height: 19px;
+}
+
+.header-menu-nav a {
+  color: #020202;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.7s;
+}
+.header-menu-nav a:hover {
+  color: aquamarine;
+}
+
+.docs img {
+  box-shadow: 0px 0px 12px 2px rgb(0, 0, 0);
+}/*# sourceMappingURL=style.css.map */
